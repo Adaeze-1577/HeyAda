@@ -4,98 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Ada's Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 10px
-        }
-        h2 {
-            color: #555;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-            margin-top: 20px;
-        }
-        h3 {
-            color: #777;
-            margin-top: 15px;
-        }
-        p {
-            margin: 5px 0;
-        }
-        ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        ul li {
-            margin-bottom: 5px;
-        }
-        .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .contact-info p {
-            margin: 5px;
-        }
-        .skills {
-            display: flex;
-            justify-content: space-between;
-        }
-        .skills div {
-            width: 48%;
-        }
-        .reference {
-            margin-top: 20px;
-        }
-        .image-section {
-            text-align: center;
-            margin: 20px
-        }
-        .image-section img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid #4CAF50;
-            object-fit: cover;
-        }
-        .nav-links {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .nav-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #4CAF50;
-            font-weight: bold;
-        }
-        .nav-links a:hover {
-            text-decoration: underline;
-        }
+        
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>EZEH, EUNICE ADAEZE</h1>
-
+        
         <!-- Navigation links -->
         <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
             <a href="#professional-experience">Professional Experience</a>
             <a href="#education">Education</a>
             <a href="#top-skills">Top Skills</a>
@@ -104,9 +28,12 @@
 
         </div>
 
-        <!-- Image Section-->
-        <div class="image-section">
-            <img src="C:\Users\hp\Desktop\Ada's Works\New Git\cvpic.jpg" alt="My CV PIC">
+        <!-- Header Section with Picture and Name-->
+        <div class="header">
+            <img src="./img/mypic2.png" alt="Ezeh Eunice Adaeze">
+            <h1>EZEH, EUNICE ADAEZE</h1>
+            <h3>Yes, you need my services!</h3>
+            <button><a href="#contact">Don't hesitate. <br>Contact Me Now!</a></button>
 
         </div>
         <div class="contact-info">
@@ -114,7 +41,7 @@
             <p>P: +234 814 758 0016</p>
             <p>A: Katton Rikkos, Lamingo, Jos, Plateau State, Nigeria</p>
         </div>
-        
+        <section id="professional-experience">
         <h2>PROFESSIONAL EXPERIENCE</h2>
 
         <h3>Pen's Might Writing Services</h3>
@@ -169,13 +96,15 @@
                 contributing to the enhancement of ICT education in
                 elementary schools.</li>
         </ul>
-
+    </section>
+        <section id="education">
         <h2>EDUCATION</h2>
         <p><strong>University of Nigeria, Nsukka</strong></p>
         <p>History and International Studies - 2014</p>
         <p><strong>WASSCE</strong></p>
         <p>The Kingsway College, Lagos - 2010</p>
-
+    </section>
+        <section id="top-skills">
         <h2>TOP SKILLS</h2>
         <div class="skills">
             <div>
@@ -205,12 +134,14 @@
                 </ul>
             </div>
         </div>
-
+    </section>
+    <section id="contact">
         <h2>Contact Me</h2>
         <p>M: ezeheuniceadaeze@gmail.com</p>
         <p>P: +234 814 758 0016</p>
         <p>A: Katton Rikkos, Lamingo, Jos, Plateau State, Nigeria</p>
-        
+    </section>
+        <section id="reference">
         <div class="reference">
         <h2>REFERENCE</h2>
         <p><strong>Ms. Abigail John</strong></p>
@@ -218,6 +149,7 @@
             Academy, Makurdi, Benue State, Nigeria</p>
         <p>+2348030511273</p>
         </div>
+    </section>
     </div>
 </body>
 </html>

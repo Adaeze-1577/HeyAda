@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: #fff;
+            }
+            .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            }
+
+            .navbar-logo img {
+            height: 40px;
+            }
+
+            .navbar-menu {
+            display: flex;
+            gap: 20px;
+            }
+
+            .navbar-item {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            }
+
+            .navbar-search input {
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+            }
+
+            .navbar-search button {
+            padding: 5px 10px;
+            background-color: #e50914;
+            border: none;
+            color: #fff;
+            border-radius: 3px;
+            cursor: pointer;
+            }
+            a{
+              color: #fff;
+              text-decoration: none;
+            }
+            .hero {
+                height: 100vh;
+                background: url('./img/moviecard.jpg') no-repeat center center/cover;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding-top: 60px; /* To account for fixed navbar */
+                }
+
+                .hero::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+                }
+
+                .hero-content {
+                position: relative;
+                z-index: 1; /* Ensure content is above the overlay */
+                max-width: 800px;
+                }
+
+                .hero h1 {
+                font-size: 3rem;
+                margin-bottom: 20px;
+                }
+
+                .hero p {
+                font-size: 1.5rem;
+                margin-bottom: 30px;
+                }
+
+                .cta-button {
+                padding: 10px 20px;
+                background-color: #e50914;
+                border: 2px dotted goldenrod;
+                color: #fff;
+                font-size: 1.2rem;
+                cursor: pointer;
+                border-radius: 5px;
+                }
+                .cta-button {
+                  color: #e50914;
+                  border: none;
+                  background: #141414;
+                }
+
+            .movie-grid {
+            padding: 20px;
+            }
+
+            .movie-grid h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            }
+
+            .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            }
+
+            .movie-card {
+            text-align: center;
+            }
+
+            .movie-card img {
+            width: 100%;
+            height: 80%;
+            border-radius: 5px;
+            }
+
+            .movie-card p {
+            margin-top: 10px;
+            font-size: 1rem;
+            }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="navbar-logo">
+      <img src="./img/netflix.png" alt="Netflix Logo">
+    </div>
+    <div class="navbar-menu">
+      <a href="#" class="navbar-item">Home</a>
+      <a href="#" class="navbar-item">TV Shows</a>
+      <a href="#" class="navbar-item">Movies</a>
+      <a href="#" class="navbar-item">Latest</a>
+      <a href="#" class="navbar-item">My List</a>
+    </div>
+    <div class="navbar-search">
+      <input type="text" placeholder="Search">
+      <button>Search</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows, and more.</h1>
+      <p>Watch anywhere. Cancel anytime.</p>
+      <button class="cta-button"><a href="https://www.netflix.com/signup/registration?locale=en-NG" target="_blank">Get Started</a></button>
+    </div>
+  </section>
+  
+
+  <!-- Movie/Show Grid -->
+  <section class="movie-grid">
+    <h2>Popular on Netflix</h2>
+    <div class="grid-container">
+      <div class="movie-card"><a href="https://nkiri.com/city-hunter-korean-drama/" target="_blank">
+        <img src="./img/CityHunter.jpg" alt="Movie 1"></a>
+        <p><a href="https://nkiri.com/city-hunter-korean-drama/" target="_blank">City Hunter</a></p>
+      </div>
+      <div class="movie-card"><a href="https://nkiri.com/code-8-part-ii-2024-download-hollywood-movie/" target="_blank">
+        <img src="./img/Code8.jpg" alt="Movie 2"></a>
+        <p><a href="https://nkiri.com/code-8-part-ii-2024-download-hollywood-movie/" target="_blank">Code 8</a></p>
+      </div>
+      <div class="movie-card"><a href="https://nkiri.com/damsel-2024-download-hollywood-movie/" target="_blank">
+        <img src="./img/Damsel 2024.jpg" alt="Movie 3">
+      </a>
+        <p><a href="https://nkiri.com/damsel-2024-download-hollywood-movie/" target="_blank">Damsel</a></p>
+      </div>
+      <div class="movie-card"><a href="https://nkiri.com/fantasy-island-2020-download-hollywood-movie/" target="_blank">
+        <img src="./img/Fantasy.jpg" alt="Movie 4">
+      </a>
+        <p><a href="https://nkiri.com/fantasy-island-2020-download-hollywood-movie/" target="_blank">Fantasy</a></p>
+      </div>
+      <div class="movie-card"><a href="https://nkiri.com/incoming-2024-download-hollywood-movie/" target="_blank">
+        <img src="./img/Incoming.jpg" alt="Movie 5"></a>
+        <p><a href="https://nkiri.com/incoming-2024-download-hollywood-movie/" target="_blank">Incoming</a></p>
+      </div>
+      <div class="movie-card"><a href="https://nkiri.com/i-am-all-girls-2021-download-south-african-movie/" target="_blank">
+        <img src="./img/Oloture.jpg" alt="Movie 6"></a>
+        <p><a href="https://nkiri.com/i-am-all-girls-2021-download-south-african-movie/" target="_blank">Oloture</a></p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+</body>
+</html>

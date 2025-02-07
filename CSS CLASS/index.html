@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Car Advert</title>
+    <style>
+        *{  
+            margin: 0;
+            padding: 0;
+        }
+       body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+       }
+        .container {
+            display: flex; 
+            background-color: gray;
+             padding: 60px;
+           height: 500px;
+        }
+
+    
+        .gold{
+            background-color: goldenrod;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .red{
+            background-color: #72676a;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .purple{
+            background-color: #cc0680;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 50px;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+        }
+        .btn-purple{
+            color: rgb(80, 45, 4);
+            background-color: goldenrod;
+        }
+        .btn-gold{
+            color: rgb(82, 3, 33);
+            background-color: #585358;
+        }
+        .btn-red{
+            color: rgb(1, 20, 14);
+            background-color: #cc0680;
+        }
+        h2{
+           color: #57040b; 
+           font-family: "trebuchet ms" serif;
+  font-weight: 900;
+  font-style: unset; 
+            font-optical-sizing: auto;
+            font-variation-settings:
+                "wdth" 100;
+            text-decoration: dotted;
+        }
+        p{
+           font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+            word-wrap: break-word;
+            width: 200px;
+            color: #ffffff;
+
+        }
+        ul{
+            word-wrap: break-word;
+            text-align: justify; 
+        }
+        img{
+            width: 50px;
+            margin-left: 10px;
+        }
+        .circle-gold{
+            background-color: #757273;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+        }
+        .circle-red{
+            background-color: #f33cbc;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+        }
+        .circle-purple{
+            background-color: goldenrod;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+        }
+        .class{
+            color: #57040b;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gold">
+            <div class="circle-gold">
+            <p><img src= "./img folder/ansuv.svg" height="50px" width="50px"> </p>
+            </div>
+            <h2>SEDAN</h2>
+            <p id="txt">Choose a sedan for its affordability. Excellent condition, low mileage, and well-maintained. Features include:
+                Comfortable seating for 5, Fuel-efficient engine and Advanced safety features.
+            </p>
+            <div>
+                <button class="btn-gold">Learn More</button> 
+            </div>
+        </div>
+        
+        <div class="red">
+            <div class="circle-red">
+            <p><img src= "./img folder/traanspo.svg" height="50px" width="50px"> </p>
+            </div>
+            <h2>Police Car</h2>
+            <p id="txt">Choose a sedan for its affordability. Excellent condition, low mileage, and well-maintained. Features include:
+                Comfortable seating for 5, Fuel-efficient engine and Advanced safety features.
+            </p>
+            <div>
+                <button class="btn-red">Learn More</button>
+            </div>
+        </div>
+        
+        <div class="purple">
+            <div class="circle-purple">
+            <p><img src= "./img folder/ansuv.svg" height="50px" width="50px"> </p>
+            </div>
+            <h2>Taxi</h2>
+           <p id="txt">Choose a sedan for its affordability. Excellent condition, low mileage, and well-maintained. Features include:
+                Comfortable seating for 5, Fuel-efficient engine and Advanced safety features.
+            </p>
+            <div>
+                
+                <button class="btn-purple">Learn More</button>
+                
+            </div>
+            
+        </div>
+        <div class="container card">
+
+            <div class="card">
+                <p>Hello</p>
+                <p>Hi</p>
+                <p>Hey</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
