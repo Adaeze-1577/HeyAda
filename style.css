@@ -29,6 +29,8 @@ body {
             width: 350px;
             height: 500px;
             margin-left: 300px;
+            border-right: 2px solid #037e41;
+            border-bottom: 5px solid #4CAF50;
         }
         .header h1 {
             font-family: "Raleway", serif;
@@ -148,3 +150,13 @@ body {
             text-decoration: underline;
         }
         
+.back{
+    border-radius: 100px;
+    background-color: #4CAF50;
+    margin-left: 1100px;
+    width: 25px;
+    height: 25px;
+}
+.back:hover{
+    background-color: #333;
+}

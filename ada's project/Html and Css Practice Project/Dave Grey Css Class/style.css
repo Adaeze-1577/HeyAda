@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Slide Container */
+  .slides {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Individual Slide */
+  .slide {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 20px 0;
+    text-align: left;
+    position: relative;
+  }
+  
+  /* Title Slide */
+  .title-slide {
+    text-align: center;
+    background-color: #ff6f61; /* Orange theme */
+    color: #fff;
+    padding: 60px;
+  }
+  
+  .title-slide h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .title-slide p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  /* Headings */
+  h2 {
+    font-size: 2rem;
+    color: #ff6f61; /* Orange theme */
+    margin-bottom: 20px;
+  }
+  
+  /* Lists */
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Shapes */
+  .shape {
+    position: absolute;
+    background-color: #ff6f61; /* Orange theme */
+    opacity: 0.2; /* Subtle transparency */
+  }
+  
+  .orange-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    bottom: -50px;
+    right: -50px;
+  }
+  
+  .orange-rectangle {
+    width: 200px;
+    height: 100px;
+    bottom: -30px;
+    right: -30px;
+  }
+  
+  .orange-triangle {
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 150px solid #ff6f61;
+    bottom: -50px;
+    right: -50px;
+  }
+  
+  .orange-diamond {
+    width: 120px;
+    height: 120px;
+    background-color: #ff6f61;
+    transform: rotate(45deg);
+    bottom: -50px;
+    right: -50px;
+  }
+  
+  /* Background Colors for Slides */
+  .intro-slide {
+    background-color: #fff3e0; /* Light orange background */
+  }
+  
+  .causes-slide {
+    background-color: #ffe0b2; /* Light orange background */
+  }
+  
+  .effects-slide {
+    background-color: #ffcc80; /* Medium orange background */
+  }
+  
+  .solutions-slide {
+    background-color: #ffb74d; /* Darker orange background */
+  }
+  
+  .conclusion-slide {
+    background-color: #ffa726; /* Dark orange background */
+  }
+  
+  .recommendations-slide {
+    background-color: #ff9800; /* Darkest orange background */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .slide {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    .title-slide h1 {
+      font-size: 2rem;
+    }
+  
+    .shape {
+      display: none; /* Hide shapes on smaller screens */
+    }
+  }
