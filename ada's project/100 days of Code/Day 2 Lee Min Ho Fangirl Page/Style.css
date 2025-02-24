@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff0f5; /* Light pink background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Glitter Background */
+.glitter-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 20%, #fff0f5 20%, #fff0f5 80%, transparent 80%, transparent),
+                radial-gradient(circle, transparent 20%, #fff0f5 20%, #fff0f5 80%, transparent 80%, transparent) 50px 50px;
+    background-size: 100px 100px;
+    background-color: #fff0f5;
+    z-index: -1;
+    animation: glitter 2s linear infinite;
+}
+
+@keyframes glitter {
+    0% { background-position: 0 0; }
+    100% { background-position: 100px 100px; }
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff69b4; /* Hot pink */
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ff69b4;
+}
+
+/* Hero Section with Animated LMH Picture */
+.hero {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 170%;
+    object-fit: cover;
+    animation: zoom-in-out 5s infinite alternate;
+}
+
+@keyframes zoom-in-out {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+/* Sections */
+.articles{
+    display: flex;
+}
+.section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* Drama Posters Section */
+.drama-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.drama {
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+}
+
+.drama img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ff69b4;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #ff1493; /* Darker pink */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff69b4;
+    color: white;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
